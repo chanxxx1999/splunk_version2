@@ -21,3 +21,7 @@ modtime = 1653737921.800539000
 [inputs/monitor%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fsplunk.version]
 version = 8.2.5
 modtime = 1654087528.424522000
+
+[authorize/role_user-tokyo]
+version = 8.2.5
+modtime = 1655728685.247155000

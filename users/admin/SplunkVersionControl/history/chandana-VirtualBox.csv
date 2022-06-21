@@ -5,3 +5,41 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 | search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
 | table app","chandana-VirtualBox","1655725162.872051",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1655636400.000000000",0,0,"1655725162.000000000",0,1655725162,16,search1,0,"1655636400.000000000","1655725162.000000000",completed,"0.133",,,,,,,,,,,,,,,,,,,
 "admin__admin__SplunkVersionControl__search2_1655725181.5","| rest splunk_server=local /servicesNS/-/git_for_splunk//configs/conf-macros count=0 f=title f=eai:acl*  | search eai:acl.app=""git_for_splunk""| dedup title | fields title","chandana-VirtualBox","1655725181.575283",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,0,1655725181,0,search2,0,,,canceled,"0.036000000000000004",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search1_1655729423.12","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
+| rename title as app
+| search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
+| table app","chandana-VirtualBox","1655729423.888330",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1655640000.000000000",0,0,"1655729423.000000000",0,1655729423,16,search1,0,"1655640000.000000000","1655729423.000000000",completed,"0.112",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search3_1655729423.13","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1655729423.898010",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1655640000.000000000",0,0,"1655729423.000000000",0,1655729423,0,search3,0,"1655640000.000000000","1655729423.000000000",completed,"0.077",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search1_1655732985.19","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
+| rename title as app
+| search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
+| table app","chandana-VirtualBox","1655732985.672621",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1655643600.000000000",0,0,"1655732985.000000000",0,1655732985,16,search1,0,"1655643600.000000000","1655732985.000000000",completed,"0.135",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search3_1655732985.20","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1655732985.697269",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1655643600.000000000",0,0,"1655732985.000000000",0,1655732985,0,search3,0,"1655643600.000000000","1655732985.000000000",completed,"0.077",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search2_1655733008.21","| rest splunk_server=local /servicesNS/-/SplunkVersionControl//configs/conf-macros count=0 f=title f=eai:acl*  | search eai:acl.app=""SplunkVersionControl""| dedup title | fields title","chandana-VirtualBox","1655733008.359841",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,0,1655733008,8,search2,0,,,completed,"0.024",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search3_1655795533.4","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1655795533.062323",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1655708400.000000000",0,0,"1655795533.000000000",0,1655795533,0,search3,0,"1655708400.000000000","1655795533.000000000",completed,"0.077",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search2_1655795545.5","| rest splunk_server=local /servicesNS/-/SplunkVersionControl//configs/conf-macros count=0 f=title f=eai:acl*  | search eai:acl.app=""SplunkVersionControl""| dedup title | fields title","chandana-VirtualBox","1655795545.649549",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,0,1655795545,8,search2,0,,,completed,"0.021",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search1_1655796705.6","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
+| rename title as app
+| search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
+| table app","chandana-VirtualBox","1655796705.161467",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,,,,search1,,,,failed,,,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search3_1655796705.7","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1655796705.174192",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,,,,search3,,,,failed,,,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search1_1655796739.8","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
+| rename title as app
+| search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
+| table app","chandana-VirtualBox","1655796739.827431",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,,,,search1,,,,failed,,,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search3_1655796739.9","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1655796739.841839",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,,,,search3,,,,failed,,,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search1_1655796836.10","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
+| rename title as app
+| search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
+| table app","chandana-VirtualBox","1655796836.689638",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,,,,search1,,,,failed,,,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search3_1655796836.11","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1655796836.715428",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,,,,search3,,,,failed,,,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search1_1655796849.12","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
+| rename title as app
+| search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
+| table app","chandana-VirtualBox","1655796849.612940",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,,,,search1,,,,failed,,,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search3_1655796849.13","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1655796849.629132",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,0,0,,,,,search3,,,,failed,,,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search1_1655797457.3","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
+| rename title as app
+| search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
+| table app","chandana-VirtualBox","1655797457.659818",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1655708400.000000000",0,0,"1655797457.000000000",0,1655797457,15,search1,0,"1655708400.000000000","1655797457.000000000",completed,"0.137",,,,,,,,,,,,,,,,,,,
+"admin__admin__SplunkVersionControl__search3_1655797457.4","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1655797457.673520",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1655708400.000000000",0,0,"1655797457.000000000",0,1655797457,0,search3,0,"1655708400.000000000","1655797457.000000000",completed,"0.05",,,,,,,,,,,,,,,,,,,

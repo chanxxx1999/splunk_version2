@@ -9892,3 +9892,13 @@ modtime = 1655744291.140330000
 owner = nobody
 version = 8.2.5
 modtime = 1655744292.671530000
+
+[props/splunkversioncontrol_restore-too_small]
+owner = nobody
+version = 8.2.5
+modtime = 1655796958.713412000
+
+[props/splunkversioncontrol_backup-too_small]
+owner = nobody
+version = 8.2.5
+modtime = 1655796958.987022000

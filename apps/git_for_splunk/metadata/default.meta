@@ -1,0 +1,8 @@
+
+[]
+access = read : [ admin ], write : [ admin ]
+export = system
+
+[views]
+access = read : [ admin ], write : [ admin ]
+export = none
